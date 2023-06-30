@@ -1,14 +1,14 @@
 
 // Задание 1
 
-let a = 10;
+let a = '10';
 alert(a);
-a = 20;
+let a = '20';
 alert(a);
 
 // Задание 2
 
-const firstIphoneYear = 2007;
+const firstIphoneYear = '2007';
 alert(firstIphoneYear);
 
 // Задание 3
@@ -53,7 +53,7 @@ num -= 3;
 num *= 7;
 num /= 3;
 num++;
-num--;
+num -;
 alert(num);
 
 // Задание 8
@@ -84,7 +84,7 @@ delete user.cityOfRecidence;  // или также можно написать d
 
 // Задание 9.4
 
-let info = user[prompt('Какую информацию хотите узнать о пользователе?')];
+let info = user(prompt['Какую информацию хотите узнать о пользователе?']);
 alert(info);
 
 
