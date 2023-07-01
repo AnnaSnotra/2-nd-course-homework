@@ -1,95 +1,123 @@
 
 // Задание 1
 
-let a = '10';
-alert(a);
-let a = '20';
-alert(a);
+let password = String(prompt('Введите пароль'));
+password = password.toLocaleLowerCase();
+if (password === 'заяц') {
+    alert('Пароль введен верно');
+} else {
+    alert('Пароль введен неправильно');
+}
 
 // Задание 2
 
-const firstIphoneYear = '2007';
-alert(firstIphoneYear);
+let c = 5;     //  let c = 0, 10, −3, 2.
+if (c > 0 && c < 10) {
+    alert('Верно');
+} else {
+    alert('Неверно');
+}
 
 // Задание 3
 
-const javaScriptCreator = 'Brendan Eich';
-alert(javaScriptCreator);
+let d = 3;
+let e = 5;
+
+if (d > 100 || e > 100) {
+    console.log('Верно')
+} else {
+    console.log('Неверно')
+}
 
 // Задание 4
 
-let x = 10;
-let y = 2;
-
-let sum = x + y;
-alert(sum);
-
-let residual = x - y;
-alert(residual);
-
-let multiply = x * y;
-alert(multiply);
-
-let division = x / y;
-alert(division);
+let a = '2';
+let b = '3';
+alert(Number(a) + Number(b));
 
 // Задание 5
 
-let result = 2 ** 5;
-alert(result)
+let monthNumber = prompt('Введите номер месяца');
+
+switch (monthNumber) {
+    case '1':
+        console.log('зима');
+        break;
+    case '2':
+        console.log('зима');
+        break;
+    case '3':
+        console.log('весна');
+        break;
+    case '4':
+        console.log('весна');
+        break;
+    case '5':
+        console.log('весна');
+        break;
+    case '6':
+        console.log('лето');
+        break;
+    case '7':
+        console.log('лето');
+        break;
+    case '8':
+        console.log('лето');
+        break;
+    case '9':
+        console.log('осень');
+        break;
+    case '10':
+        console.log('осень');
+        break;
+    case '11':
+        console.log('осень');
+        break;
+    case '12':
+        console.log('зима');
+        break;
+
+    default:
+        if (monthNumber < 1 || monthNumber > 12)
+            console.log('номер месяца больше 12 или меньше 1');
+        break;
+}
 
 // Задание 6
 
-let newA2 = 9;
-let b = 2;
-let module = newA2 % b;
-alert(module);
+// см. файл idex.html
 
 // Задание 7
 
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num -;
-alert(num);
+
 
 // Задание 8
 
-let age = Number(prompt('Сколько вам лет?'));
-alert(age);
+
 
 // Задание 9.0
 
-let user = {
-    name: 'Anna',
-    age: 27,
-    isAdmin: true
-}
+
 
 // Задание 9.1
 
-user.cityOfRecidence = 'Moscow';
+
 
 // Задание 9.2
 
-user.age = 25;
+
 
 // Задание 9.3
 
-delete user.cityOfRecidence;  // или также можно написать delete user[‘cityOfRecidence'];
+
 
 
 // Задание 9.4
 
-let info = user(prompt['Какую информацию хотите узнать о пользователе?']);
-alert(info);
+
 
 
 // Задание 10
 
-let name = prompt("Как вас зовут?");
-alert("Привет," + ${ name } + "!")
+
 
