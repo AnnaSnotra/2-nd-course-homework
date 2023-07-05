@@ -81,9 +81,9 @@ a {
   background-image: url(img/game1.jpg);
 }
 
-.footerimg1:hover path {
-  border-width: 3px;
-  border: #44D2FF;
+.footerimg1:hover {
+  border: 3px solid  #44D2FF;
+  border-radius: 16px;
 }
 
 .footerimg2 {
@@ -93,11 +93,21 @@ a {
   background-image: url(img/game2.jpg);
 }
 
+.footerimg2:hover {
+  border: 3px solid  #44D2FF;
+  border-radius: 16px;
+}
+
 .footerimg3 {
   width: 379px;
   height: 300px;
   border-radius: 16px;
   background-image: url(img/game3.jpg);
+}
+
+.footerimg3:hover {
+  border: 3px solid  #44D2FF;
+  border-radius: 16px;
 }
 
 .footer__text {

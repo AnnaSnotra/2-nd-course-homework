@@ -1,8 +1,8 @@
 
 // Задание 1
 
-let password = String(prompt('Введите пароль'));
-password = password.toLocaleLowerCase();
+let password = prompt('Введите пароль');
+password = 'заяц';
 if (password === 'заяц') {
     alert('Пароль введен верно');
 } else {
@@ -40,41 +40,25 @@ alert(Number(a) + Number(b));
 let monthNumber = prompt('Введите номер месяца');
 
 switch (monthNumber) {
+    case '12':
     case '1':
-        console.log('зима');
-        break;
     case '2':
         console.log('зима');
         break;
     case '3':
-        console.log('весна');
-        break;
     case '4':
-        console.log('весна');
-        break;
     case '5':
         console.log('весна');
         break;
     case '6':
-        console.log('лето');
-        break;
     case '7':
-        console.log('лето');
-        break;
     case '8':
         console.log('лето');
         break;
     case '9':
-        console.log('осень');
-        break;
     case '10':
-        console.log('осень');
-        break;
     case '11':
         console.log('осень');
-        break;
-    case '12':
-        console.log('зима');
         break;
 
     default:
