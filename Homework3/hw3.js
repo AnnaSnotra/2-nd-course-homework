@@ -90,12 +90,10 @@ if (userAnswer % 2 == 0) {
 // Задание 8
 
 let clientOS = Number(prompt('Если Вы используете iOS введите 0, а если Android - введите 1'));
-clientOS = 0;
-clientOS = 1;
-if (clientOS = 0) {
+if (clientOS === 0) {
     alert('Установите версию приложения для iOS по ссылке');
 }
-if (clientOS = 1) {
+if (clientOS === 1) {
     alert('Установите версию приложения для Android по ссылке');
 } else {
     alert('Введите цифру 0 или 1');
@@ -105,22 +103,16 @@ if (clientOS = 1) {
 // Задание 9
 
 
-let clientOS = Number(prompt('Если Вы используете iOS введите 0, а если Android - введите 1'));
-clientOS = 0;
-clientOS = 1;
 let clientDeviceYear = Number(prompt('Введите год выпуска мобильного телефона'));
-let clientDeviceYear = 2015;
-if (clientDeviceYear >= 2015 && clientOS = 0) {
+if (clientDeviceYear >= 2015 && clientOS === 0) {
     alert('Установите версию приложения для iOS по ссылке');
 }
-if (clientDeviceYear >= 2015 && clientOS = 1) {
+if (clientDeviceYear >= 2015 && clientOS === 1) {
     alert('Установите версию приложения для Android по ссылке');
 }
-if (clientDeviceYear < 2015 && clientOS = 0) {
+if (clientDeviceYear < 2015 && clientOS === 0) {
     alert('Установите облегченную версию приложения для iOS по ссылке');
 }
-if (clientDeviceYear < 2015 && clientOS = 1) {
+if (clientDeviceYear < 2015 && clientOS === 1) {
     alert('Установите облегченную версию приложения для Android по ссылке');
 }
-
-
