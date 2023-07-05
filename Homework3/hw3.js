@@ -73,14 +73,54 @@ switch (monthNumber) {
 
 // Задание 7
 
+let userAnswer = Number(prompt('Пожалуйста, введите любое число'));
+if (isNaN(userAnswer)) {
+    alert("Это не цифра :( Попробуйте снова.");
+} else {
+    alert("Это действительно цифра!")
+}
+/// console.log(typeof f);
+if (userAnswer % 2 == 0) {
+    alert('Число четное')
+} else {
+    alert('Число нечетное')
+}
+
 
 // Задание 8
+
+let clientOS = Number(prompt('Если Вы используете iOS введите 0, а если Android - введите 1'));
+clientOS = 0;
+clientOS = 1;
+if (clientOS = 0) {
+    alert('Установите версию приложения для iOS по ссылке');
+}
+if (clientOS = 1) {
+    alert('Установите версию приложения для Android по ссылке');
+} else {
+    alert('Введите цифру 0 или 1');
+}
 
 
 // Задание 9
 
 
-// Задание 10
-
+let clientOS = Number(prompt('Если Вы используете iOS введите 0, а если Android - введите 1'));
+clientOS = 0;
+clientOS = 1;
+let clientDeviceYear = Number(prompt('Введите год выпуска мобильного телефона'));
+let clientDeviceYear = 2015;
+if (clientDeviceYear >= 2015 && clientOS = 0) {
+    alert('Установите версию приложения для iOS по ссылке');
+}
+if (clientDeviceYear >= 2015 && clientOS = 1) {
+    alert('Установите версию приложения для Android по ссылке');
+}
+if (clientDeviceYear < 2015 && clientOS = 0) {
+    alert('Установите облегченную версию приложения для iOS по ссылке');
+}
+if (clientDeviceYear < 2015 && clientOS = 1) {
+    alert('Установите облегченную версию приложения для Android по ссылке');
+}
 
 
