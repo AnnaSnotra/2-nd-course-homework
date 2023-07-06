@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  background-image: url(img/toppic.jpg);
+  height: 1024px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  padding-top: 217px;
+}
+
+.h1 {
+  font-size: 64px;
+  text-align: left;
+  height: 125.01px;
+  width: 788px;
+}
+
+.p {
+  padding-top: 32px;
+  padding-bottom: 44px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 481px;
+}
+
+.button {
+  color: #FFFFFF;
+  border: none;
+  font-family: Montserrat;
+  font-size: 18px;
+  background-color: #9C0332;
+  border-radius: 30px;
+  width: 234px;
+  height: 48.6px;
+}
+
+.footer {
+  background-color: #000915;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footergame {
+  background-color: #000915;
+  display: flex;
+  gap: 32px;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+.footerimg1 {
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+  background-image: url(img/game1.jpg);
+}
+
+.footerimg1:hover {
+  border: 3px solid  #44D2FF;
+  border-radius: 16px;
+}
+
+.footerimg2 {
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+  background-image: url(img/game2.jpg);
+}
+
+.footerimg2:hover {
+  border: 3px solid  #44D2FF;
+  border-radius: 16px;
+}
+
+.footerimg3 {
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+  background-image: url(img/game3.jpg);
+}
+
+.footerimg3:hover {
+  border: 3px solid  #44D2FF;
+  border-radius: 16px;
+}
+
+.footer__text {
+  font-size: 24px;
+  padding-top: 236px;
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+
+.bottomsection {
+  padding-top: 282px;
+  padding-bottom: 282px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 135px;
+}
+
+.bottomtitle {
+  font-size: 48px;
+}
+
+.bottomparagraph {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.bottomimg {
+  width: 485px;
+}
+
+
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    height: 735px;
+    background-image: url(img/toppicmob.jpg);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .h1 {
+    font-size: 32px;
+    text-align: center;
+    width: 343px;
+    height: auto;
+  }
+  .header {
+    padding-top: 238px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .p {
+    line-height: 22px;
+    padding-bottom: 32px;
+    width: 343px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .button {
+    margin: 0;
+  }
+  .footergame {
+    padding-top: 128px;
+    padding-bottom: 127px;
+    flex-wrap: wrap;
+  }
+  .footerimg1 {
+    width: 343px;
+  }
+  .footerimg2 {
+    width: 343px;
+  }
+  .footerimg3 {
+    width: 343px;
+  }
+
+  .bottomsection {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 64px;
+    padding-bottom: 85px;
+    padding-top: 51px;
+  }
+
+  .bottomdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottomtitle {
+    font-size: 32px;
+  }
+
+  .bottomimg {
+    width: 344px;
+  }
+}
