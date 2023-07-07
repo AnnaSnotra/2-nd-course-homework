@@ -126,6 +126,15 @@ a {
   gap: 135px;
 }
 
+.bottomsection2 {
+  padding-top: 282px;
+  padding-bottom: 282px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 135px;
+}
+
 .bottomtitle {
   font-size: 48px;
 }
@@ -133,6 +142,7 @@ a {
 .bottomparagraph {
   padding-top: 32px;
   padding-bottom: 32px;
+  font-size: 18px;
 }
 
 .bottomimg {
