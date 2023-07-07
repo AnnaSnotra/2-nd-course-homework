@@ -209,7 +209,25 @@ a {
     padding-top: 51px;
   }
 
+  .bottomsection2 {
+    padding-top: 51px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 64pxpx;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
   .bottomdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottomdiv2 {
     display: flex;
     flex-direction: column;
     align-items: center;
