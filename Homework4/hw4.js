@@ -52,3 +52,11 @@ let num = 5;
 
 // Задание 6
 
+for (let dayNumber = 0; dayNumber <= 31; dayNumber++) {
+    if (dayNumber % 5 == 0) {
+        console.log('Сегодня пятница, ' + ${dayNumber} + ' - е число.Необходимо подготовить отчет.');
+        continue;
+    }
+    console.log("Рабочий день");
+}
+
