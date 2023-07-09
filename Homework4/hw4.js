@@ -31,32 +31,36 @@ let obj = {
 };
 
 for (key in obj) {
-    console.log([key] + ' - зарплата ' + obj[key] + ' долларов.');
+    console.log(key + ' - зарплата ' + obj[key] + ' долларов.');
 }
 
 // Задание 5
 
-for (let n = 1000; n >= 50; n /= 2) {
-    console.log(n);
+let n = 1000;
+let num = 0;
+
+while (n >= 50) {
+    num++;
+    n /= 2;
 }
+console.log(n);
+console.log(num);
 
-let num = 5;
-
-// получится число 62.5       
-1000
+// получится n = 31.25   ;   num = 5    
 500
 250
 125
 62.5
+31.25
 
 
 // Задание 6
 
-for (let dayNumber = 0; dayNumber <= 31; dayNumber++) {
-    if (dayNumber % 5 == 0) {
-        console.log('Сегодня пятница, ' + ${dayNumber} + ' - е число.Необходимо подготовить отчет.');
-        continue;
-    }
-    console.log("Рабочий день");
+for (let dayNumber = 1; dayNumber <= 31; dayNumber += 7) {
+    console.log(`Сегодня пятница, ${dayNumber} - е число. Необходимо подготовить отчет.`);
 }
+
+///   либо можно с таким синтаксисом  console.log('Сегодня пятница, ' + dayNumber + ' - е число.Необходимо подготовить отчет.');
+
+
 
