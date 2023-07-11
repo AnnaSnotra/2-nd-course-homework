@@ -2,17 +2,16 @@
 // Напишите функцию, которая возвращает меньшее из 2 чисел. 
 // Например, из двух чисел — 8 и 4 — функция должна вернуть 4. Если передадим 6 и 6, то функция должна вернуть 6.
 
-function minNumber(a, b) {
-    let userAnswer = a, b;
 
-    if (a >= b) {
-        console.log(`Меньшее из чисел ${b}`);
+function min(a, b) {
+    if (a < b) {
+        console.log(a);
     } else {
-        console.log(`Меньшее из чисел ${a}`)
+        console.log(b);
     }
 }
 
-minNumber(4, 8);
+min(3, 8);
 
 
 // Задание 2
