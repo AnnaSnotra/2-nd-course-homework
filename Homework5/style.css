@@ -111,6 +111,7 @@ a {
 }
 
 .footer__text {
+  text-decoration-color: white;
   font-size: 24px;
   padding-top: 236px;
   padding-left: 32px;
