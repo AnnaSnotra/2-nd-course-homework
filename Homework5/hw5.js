@@ -64,17 +64,17 @@ square(2);
 function age(userAnswer) {
     userAnswer = prompt('Сколько Вам лет?');
 
-    if (age < 0) {
+    if (userAnswer < 0) {
         console.log('Вы ввели неправильное значение');
     }
-    if (age <= 12) {
+    if (userAnswer <= 12) {
         console.log('Привет, друг!');
     } else {
         сonsole.log('Добро пожаловать!')
     }
 }
 
-age(15);
+age();
 
 
 // Задание 5
