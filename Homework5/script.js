@@ -7,7 +7,7 @@
 // и логические операторы || (логическое ИЛИ) и && (логическое И).
 
 function monthNumber() {
-    let userAnswer = prompt(`Введите номер месяца`, '1 - 12');
+    let userAnswer = Number(prompt(`Введите номер месяца`, '1 - 12'));
     if (isNaN(userAnswer)) {
         alert('Неправильное число, попробуйте еще раз.');
     }
