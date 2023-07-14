@@ -135,25 +135,25 @@ cub(5);
 // , которое возвращает площадь круга через радиус, а также getPerimeter,
 // который возвращает периметр окружности.
 
-function getRectangleArea() {
+function getArea() {
     return (this.radius ** 2) * 3.14;
 }
-function getRectanglePerimeter() {
+function getPerimeter() {
     return this.radius * 2 * 3.14;
 }
 
 const circle1 = {
     radius: 4,
 
-    getArea: getRectangleArea,
-    getPerimeter: getRectanglePerimeter,
+    getArea: getArea,
+    getPerimeter: getPerimeter,
 };
 
 const circle2 = {
     radius: 7,
 
-    getArea: getRectangleArea,
-    getPerimeter: getRectanglePerimeter,
+    getArea: getArea,
+    getPerimeter: getPerimeter,
 };
 
 console.log(circle1.getArea());

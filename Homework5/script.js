@@ -22,4 +22,3 @@ function monthNumber() {
     }
     alert(season);
 }
-
