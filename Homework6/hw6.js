@@ -24,14 +24,12 @@ num.forEach((el, index) => {
 // индекс числа 4 = 2.
 
 
-
-
 // Задание 3 +
 // Дан массив чисел: [1, 3, 5, 10, 20].
 // С помощью метода join выведите элементы массива через пробел (пустую строку ' ').
 
 const numers = [1, 3, 5, 10, 20];
-numers = numers.join(' ');
+numers = numers.join([' ']);
 console.log(numers);
 
 
@@ -110,6 +108,10 @@ const line = ['abcdef'];
 console.log(line);
 line[line.length] = [5, 4, 3, 2, 1, 0];
 
+//
+let line = ['abcdef'];
+line = line.reverse();
+console.log(line);
 
 // Задание 9 +
 // Дан массив: [[1, 2, 3,],[4, 5, 6]].
@@ -124,7 +126,9 @@ const arr = multiNum.flat();
 console.log(arr);
 
 // либо такой вариант
-const multiNum = [[1, 2, 3,], [4, 5, 6],];
+const multiNum = [
+  [1, 2, 3,],
+  [4, 5, 6],];
 
 multiNum = multiNum.join('');
 console.log(multiNum);
@@ -157,6 +161,20 @@ for (let i = 0; i < arr.length - 1; i++) {
 
 const getLengthWords = ['слово', '', 'слог', 'длинное предложение', 'буква']
 
+
+function filterPositive(array) {
+  let result = [];
+
+  for (let index = 0; index < array.length; index++) {
+    if (array[index] < 0) {
+      result.push(array[index]);
+    }
+  }
+  return result;
+}
+
+console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
+console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
 
 // Задание 13 +
 // Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив содержащий только отрицательные значения.
