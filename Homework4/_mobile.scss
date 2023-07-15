@@ -1,0 +1,99 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        height: 735px;
+        background-image: url(img/toppicmob.jpg);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .h1 {
+        font-size: 32px;
+        text-align: center;
+        width: 343px;
+        height: auto;
+    }
+
+    .header {
+        padding-top: 238px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p {
+        line-height: 22px;
+        padding-bottom: 32px;
+        width: 343px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .button {
+        margin: 0;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footergame {
+        padding-top: 128px;
+        padding-bottom: 127px;
+        flex-direction: column;
+    }
+
+    .footerimg1 {
+        width: 343px;
+    }
+
+    .footerimg2 {
+        width: 343px;
+    }
+
+    .footerimg3 {
+        width: 343px;
+    }
+
+    .bottomsection {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 64px;
+        padding-bottom: 85px;
+        padding-top: 51px;
+    }
+
+    .bottomsection2 {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap: 64px;
+        padding-bottom: 90px;
+        padding-top: 51px;
+    }
+
+    .bottomdiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .bottomdiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottomtitle {
+        font-size: 32px;
+    }
+
+    .bottomimg {
+        width: 344px;
+    }
+}
