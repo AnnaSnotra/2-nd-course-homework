@@ -33,7 +33,6 @@ numers = numers.join([' ']);
 console.log(numers);
 
 
-
 // Задание 4 +
 // С помощью вложенных циклов создайте многомерный массив вида: [[1, 1, 1], [1, 1, 1], [1, 1, 1]].
 
@@ -55,8 +54,6 @@ for (let i = 0; i < 3; i++) {
     nums[i].push(1);
   }
 }
-
-
 
 // Задание 5 +
 // Дан массив: [1, 1, 1].
@@ -130,8 +127,8 @@ const multiNum = [
   [1, 2, 3,],
   [4, 5, 6],];
 
-multiNum = multiNum.join('');
-console.log(multiNum);
+multiNums = multiNum.join(',');
+console.log(multiNums);
 
 
 
@@ -148,33 +145,30 @@ for (let i = 0; i < arr.length - 1; i++) {
 }
 
 
-!!!!!// Задание 11
+// Задание 11 +
 // Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив квадратов этих чисел.
 
+let arr = [1, 2, 3, 4, 5, 6];
+for (let i = 0; i < arr.length; i++) {
+  let squere = arr[i] * arr[i];
+  console.log(squere);
+}
 
 
-
-// Задание 12 
+// Задание 12 ?
 // Создайте функцию, которая принимает на вход массив строк, а возвращает массив длины слов.
 // Пример вызова:
 // getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']); // [5, 0, 4, 19, 5]
 
-const getLengthWords = ['слово', '', 'слог', 'длинное предложение', 'буква']
 
-
-function filterPositive(array) {
-  let result = [];
-
-  for (let index = 0; index < array.length; index++) {
-    if (array[index] < 0) {
-      result.push(array[index]);
-    }
-  }
-  return result;
+let getLengthWords = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+for (let i = 0; getLengthWords.length; i++) {
+  let length = i;
+  console.log(length);
 }
+///?!?!?!?!?!?! Идеи закончились. Нужна помощь.
 
-console.log(filterPositive([-1, 0, 5, -10, 56])); // => [-1, -10]
-console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
+
 
 // Задание 13 +
 // Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив содержащий только отрицательные значения.
