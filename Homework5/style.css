@@ -58,6 +58,13 @@ a {
   height: 48.6px;
 }
 
+.body {
+  background-color: #000915;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .footer {
   background-color: #000915;
   background-repeat: no-repeat;
@@ -136,6 +143,21 @@ a {
   gap: 135px;
 }
 
+.bottomsection3 {
+  background-image: url(img/riddles.jpg);
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bottomdiv3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 276px;
+}
+
 .bottomtitle {
   font-size: 48px;
 }
@@ -144,6 +166,22 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
   font-size: 18px;
+}
+
+.bottomparagraph2 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.bottomparagraph3 {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 32.5px;
+  padding-bottom: 32.5px;
+  border-color: #B8D4FF;
+  border-top: 1px;
 }
 
 .bottomimg {

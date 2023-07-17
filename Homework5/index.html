@@ -1,77 +1,204 @@
-<!DOCTYPE html>
-<html lang="ru">
+// Задание 1
+// Дан массив:[1, 5, 4, 10, 0, 3].
+// Необходимо создать цикл, который будет выводить элементы массива до тех пор, пока не встретит значение 10.
+// После вывода значения 10 в консоль цикл должен прекратить свою работу.
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework1</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+const numbs = [1, 5, 4, 10, 0, 3];
 
-<body>
-    <div class="top center">
-        <div class="top__gradient center">
-            <header class="header">
-                <h1 class="h1">Добро пожаловать <br> на мой сайт !</h1>
-                <p class="p">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b> и
-                    <b>приступай</b>
-                </p>
+for (let i = 0; i < numbs.length; i++) { if (numbs[i]==10) break; console.log(numbs[i]); } // Задание 2 // Дан массив:
+    [1, 5, 4, 10, 0, 3]. // Найдите позицию (индекс) числа 4 в этом массиве. // Подсказка: Задачу можно решить методом
+    перебора элементов или используя метод массива indexOf. const num=[1, 5, 4, 10, 0, 3]; num.forEach((el, index)=> {
+    console.log(`${index}: ${el}`);
+    });
+    // индекс числа 4 = 2.
 
-                <button class="button">Поехали!</button>
 
-            </header>
-        </div>
-    </div>
 
-    <footer class="footer center">
-        <section class="footergame">
+    // Задание 3
+    // Дан массив чисел: [1, 3, 5, 10, 20].
+    // С помощью метода join выведите элементы массива через пробел (пустую строку ' ').
 
-            <a href="#game1">
-                <div class="footerimg1">
-                    <p class="footer__text">Игра 1</p>
+
+
+
+
+    // Задание 4
+    // С помощью вложенных циклов создайте многомерный массив вида: [[1, 1, 1], [1, 1, 1], [1, 1, 1]].
+
+
+
+    // Задание 5
+    // Дан массив: [1, 1, 1].
+    //Добавьте в конец массива значения 2, 2, 2.
+
+    const numbers = [1, 1, 1];
+    console.log(numbers);
+    numbers[3] = 2;
+    numbers[4] = 2;
+    numbers[5] = 2;
+    console.log(numbers);
+
+
+    // Задание 6
+    // Дан массив: [9, 8, 7, 'a', 6, 5].
+    // С помощью метода sort отсортируйте массив и удалите букву 'a' из данного массива.
+    // В результате работы программы вывести массив, состоящий из цифр.
+
+
+
+    //Задание 7
+    // Дан массив: [9, 8, 7, 6, 5].
+    // Попросить пользователя угадать число (использовать prompt). Если значение,
+    // которое ввёл пользователь, есть в массиве, вывести в alert «Угадал», в противном случае вывести «Не угадал».
+
+    let userAsk = [9, 8, 7, 6, 5];
+    let userAnswer = Number(prompt('Угадай число'));
+    let search = userAsk.includes(userAnswer);
+    console.log(search);
+    if (search === true) {
+    console.log('Угадал');
+    } else {
+    console.log('Не угадал');
+    }
+
+
+    // Задание 8
+    // Дана строка: 'abcdef'. Необходимо, чтобы программа вывела в консоль 'fedcba'.
+
+    const line = ['abcdef'];
+    console.log(line);
+    line[line.length] = [5, 4, 3, 2, 1, 0];
+
+
+    // Задание 9
+    // Дан массив: [[1, 2, 3,],[4, 5, 6]].
+    // Выведите в консоль массив вида: [1, 2, 3, 4, 5, 6].
+
+    const multiNum = [
+    [1, 2, 3,],
+    [4, 5, 6],
+    ];
+
+    const arr = multiNum.flat();
+    console.log(arr);
+
+    // Задание 10
+    // Создайте массив с произвольными числами (диапазон от 1 до 10). Переберите его с помощью цикла for
+    // и в каждой итерации выведите в консоль сумму текущего и следующего элементов массива.
+    // Следующий элемент массива можно получить с помощью индекса: i + 1.
+    // Обратите внимание, что у последнего элемента нет следующего.
+
+    let arr = [1, 2, 3, 4, 5, 6];
+    for (let i = 0; i < arr.length - 1; i++) { let sum=arr[i] + arr[i + 1]; console.log(sum); } // Задание 11 //
+        Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив квадратов этих чисел. //
+        Задание 12 // Создайте функцию, которая принимает на вход массив строк, а возвращает массив длины слов. //
+        Пример вызова: // getLengthWords(['слово', '' , 'слог' , 'длинное предложение' , 'буква' ]); // [5, 0, 4, 19, 5]
+        // Задание 13 // Создайте функцию, которая принимает на вход массив целых чисел, а возвращает массив содержащий
+        только отрицательные значения. function filterPositive(array) { let result=[]; for (let index=0; index <
+        array.length; index++) { if (array[index] < 0) { result.push(array[index]); } } return result; }
+        console.log(filterPositive([-1, 0, 5, -10, 56])); //=> [-1, -10]
+        console.log(filterPositive([-25, 25, 0, -1000, -2])); // => [-25, -1000, -2]
+
+
+
+
+
+
+        HW5 HTML
+
+        <!DOCTYPE html>
+        <html lang="ru">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Homework1</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="style.css">
+        </head>
+
+        <body>
+            <div class="top center">
+                <div class="top__gradient center">
+                    <header class="header">
+                        <h1 class="h1">Добро пожаловать <br> на мой сайт !</h1>
+                        <p class="p">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b>
+                            и
+                            <b>приступай</b>
+                        </p>
+
+                        <button class="button">Поехали!</button>
+
+                    </header>
                 </div>
-            </a>
-
-
-
-            <div class="footerimg2">
-                <p class="footer__text">Игра 2</p>
             </div>
 
-            <div class="footerimg3">
-                <p class="footer__text">Игра 3</p>
-            </div>
-        </section>
-        <section class="bottomsection" id="game1">
-            <div class="bottomdiv">
-                <h3 class="bottomtitle">Времена года!</h3>
-                <p class="bottomparagraph">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к
-                    какому
-                    времени года он относится</p>
-                <button class="button" onclick="monthNumber()">Играть!</button>
-            </div>
-            <div>
-                <img class="bottomimg" src="img/bottompic.svg" alt="bottompic">
-            </div>
-        </section>
-        <section class="bottomsection2">
-            <div>
-                <img class="bottomimg" src="img/bottom2pic.svg" alt="bottom2pic">
-            </div>
-            <div class="bottomdiv2">
-                <h4 class="bottomtitle">Запомни слова</h4>
-                <p class="bottomparagraph">При нажатии на кнопку играть, вы увидите несколько слов, которые вам
-                    необходимо запомнить.</p>
-                <button class="button">Играть!</button>
-            </div>
-        </section>
-    </footer>
 
-    <script src="script.js"></script>
-</body>
+            <section class="footergame">
+
+                <a href="#game1">
+                    <div class="footerimg1">
+                        <p class="footer__text">Игра 1</p>
+                    </div>
+                </a>
+
+                <div class="footerimg2">
+                    <p class="footer__text">Игра 2</p>
+                </div>
+
+                <div class="footerimg3">
+                    <p class="footer__text">Игра 3</p>
+                </div>
+            </section>
+
+            <div class="body">
+                <section class="bottomsection" id="game1">
+                    <div class="bottomdiv">
+                        <h3 class="bottomtitle">Времена года!</h3>
+                        <p class="bottomparagraph">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете
+                            к
+                            какому
+                            времени года он относится</p>
+                        <button class="button" onclick="monthNumber()">Играть!</button>
+                    </div>
+                    <div>
+                        <img class="bottomimg" src="img/bottompic.svg" alt="bottompic">
+                    </div>
+                </section>
+                <section class="bottomsection2">
+                    <div>
+                        <img class="bottomimg" src="img/bottom2pic.svg" alt="bottom2pic">
+                    </div>
+                    <div class="bottomdiv2">
+                        <h4 class="bottomtitle">Запомни слова</h4>
+                        <p class="bottomparagraph">При нажатии на кнопку играть, вы увидите несколько слов, которые вам
+                            необходимо запомнить.</p>
+                        <button class="button">Играть!</button>
+                    </div>
+                </section>
+                <section class="bottomsection3">
+                    <div class="bottomdiv3">
+                        <h4 class="bottomtitle">Игра в загадки</h4>
+                        <p class="bottomparagraph2">Компьютер загадывает загадку, вам необходимо ее угадать, если вы
+                            дадите не
+                            правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.
+                        </p>
+                        <button class="button">Играть!</button>
+                    </div>
+                </section>
+            </div>
 
 
-</html>
+
+            <footer class="footer center">
+                <hr style="border: 1px solid #B8D4FF33;">
+                <p class="bottomparagraph3">Все права защищены</p>
+            </footer>
+
+            <script src="script.js"></script>
+        </body>
+
+
+        </html>
