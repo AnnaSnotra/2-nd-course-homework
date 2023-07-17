@@ -166,7 +166,7 @@ for (let i = 0; getLengthWords.length; i++) {
   let length = i;
   console.log(length);
 }
-///?!?!?!?!?!?! Идеи закончились. Нужна помощь.
+///?!?!?!?!?!?!  Нужна помощь.
 
 
 
