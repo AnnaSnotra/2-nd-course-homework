@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        color: #FFFFFF;
+        ;
+     }
+    
+     a {
+        text-decoration: none;
+     }
+    
+     .center {
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
+      }
+
+      .top {
+        background-image: url(img/toppic.jpg);
+        height: 1024px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+     }
+
+     .header {
+        padding-top: 217px;
+     }
+
+     .h1 {
+        font-size: 64px;
+        text-align: left;
+        height: 125.01px;
+        width: 788px;
+     }
+
+     .p {
+        padding-top: 32px;
+        padding-bottom: 44px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        width: 481px;
+     }
+
+    .button {
+        color: #FFFFFF;
+        border: none;
+        font-family: Montserrat;
+        font-size: 18px;
+        background-color: #9C0332;
+        margin: 16px;
+        border-radius: 30px;
+        width: 234px;
+        height: 48.6px;
+    }
+
+    .footer {
+        background-color: #000915;
+        height: 556px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;  
+    }
+
+    .footergame {
+        background-color: #000915;
+        display: flex;
+        gap: 32px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .footerimg1 {
+        width: 379px;
+        height: 300px;
+        border-radius: 16px;
+        background-image: url(img/game1.jpg);
+    }
+
+    .footerimg2 {
+      width: 379px;
+      height: 300px;
+      border-radius: 16px;
+      background-image: url(img/game2.jpg);
+  }
+
+  .footerimg3 {
+   width: 379px;
+   height: 300px;
+   border-radius: 16px;
+   background-image: url(img/game3.jpg);
+}
+
+.footer__text {
+   font-size: 24px;
+   padding-top: 236px;
+   padding-left: 32px;
+   padding-bottom: 32px;
+}
+
+@import 'mobile';
