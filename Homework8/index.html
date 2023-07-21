@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top center">
+        <div class="top__gradient center">
+            <header class="header">
+                <h1 class="h1">Добро пожаловать <br> на мой сайт !</h1>
+                <p class="p">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <b>поехали</b>
+                    и
+                    <b>приступай</b>
+                </p>
+
+                <button class="button">Поехали!</button>
+
+            </header>
+        </div>
+    </div>
+
+
+    <section class="footergame">
+
+        <a href="#game1">
+            <div class="footerimg1">
+                <p class="footer__text">Игра 1</p>
+            </div>
+        </a>
+
+        <a href="#game2">
+            <div class="footerimg2">
+                <p class="footer__text">Игра 2</p>
+            </div>
+        </a>
+
+
+        <div class="footerimg3">
+            <p class="footer__text">Игра 3</p>
+        </div>
+    </section>
+
+    <div class="body">
+        <section class="bottomsection" id="game1">
+            <div class="bottomdiv">
+                <h3 class="bottomtitle">Времена года!</h3>
+                <p class="bottomparagraph">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете
+                    к
+                    какому
+                    времени года он относится</p>
+                <button class="button" onclick="monthNumber()">Играть!</button>
+            </div>
+            <div>
+                <img class="bottomimg" src="img/bottompic.svg" alt="bottompic">
+            </div>
+        </section>
+        <section class="bottomsection2" id="game2">
+            <div>
+                <img class="bottomimg" src="img/bottom2pic.svg" alt="bottom2pic">
+            </div>
+            <div class="bottomdiv2">
+                <h4 class="bottomtitle">Запомни слова</h4>
+                <p class="bottomparagraph">При нажатии на кнопку играть, вы увидите несколько слов, которые вам
+                    необходимо запомнить.</p>
+                <button class="button" onclick="getWord()">Играть!</button>
+            </div>
+        </section>
+        <section class="bottomsection3">
+            <div class="bottomdiv3">
+                <h4 class="bottomtitle">Игра в загадки</h4>
+                <p class="bottomparagraph2">Компьютер загадывает загадку, вам необходимо ее угадать, если вы
+                    дадите не
+                    правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.
+                </p>
+                <button class="button">Играть!</button>
+            </div>
+        </section>
+    </div>
+
+
+
+    <footer class="footer center">
+        <hr style="border: 1px solid #B8D4FF33;">
+        <p class="bottomparagraph3">Все права защищены</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
