@@ -68,10 +68,11 @@ const intervalId = setInterval(() => {
 // чтобы приветствие выводилось в консоль не сразу, а спустя 1 секунду. Используйте setTimeout.
 
 function delayForSecond() {
-    console.log('Привет, Глеб!');
+    console.log('Привет, Глеб!')
 }
 
 setTimeout(delayForSecond, 1000);
+
 
 
 // Задание 5
@@ -98,4 +99,8 @@ function sayHi(name) {
 // Код выше менять нельзя
 
 // Нужно изменить код ниже:
-delayForSecond(sayHi('Глеб'), 1000)
+
+setTimeout(function afterTwoSeconds() {
+    console.log(sayHi('Глеб'));
+}, 2000)
+setTimeout(delayForSecond);
