@@ -44,8 +44,8 @@ function getWord() {
     let userAnswer1 = prompt('Чему равнялся первый элемент массива?');
     let userAnswer2 = prompt('ему равнялся последний элемент массива?');
 
-    if (userAnswer1 === list[0]) {
-        if (userAnswer2 === list[6]) {
+    if (userAnswer1 === list[0].toLowerCase()) {
+        if (userAnswer2 === list[6].toLowerCase()) {
             alert('Поздравляю, Вы угадали оба элемента!');
         } else {
             alert('Вы были близки к победе!');
