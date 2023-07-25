@@ -104,3 +104,11 @@ setTimeout(function afterTwoSeconds() {
     console.log(sayHi('Глеб'));
 }, 2000)
 setTimeout(delayForSecond);
+
+// либо так:
+
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
+
+delayForSecond(() => sayHi('Глеб'));
